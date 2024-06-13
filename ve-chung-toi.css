@@ -1,0 +1,390 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+html {
+  font-size: 1vw;
+}
+
+html body[data-scroll-locked] {
+  overflow: auto !important;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 4.26666vw;
+  }
+}
+
+body {
+  background: white;
+  color: black;
+  scroll-behavior: smooth;
+}
+/* nav */
+.nav {
+  width: 100%;
+  height: 6.875rem;
+  flex-shrink: 0;
+}
+/* banner */
+.vct_banner {
+  width: 100%;
+  height: 42.375rem;
+  flex-shrink: 0;
+  background: url("./images/bg-banner.png") lightgray -1.079px -108px / 100.135%
+    153.927% no-repeat;
+}
+.vct_banner_content {
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  padding-top: 1.26rem;
+}
+.vct_link {
+  display: flex;
+  align-items: center;
+}
+.vct_banner_a {
+  text-decoration: none;
+  color: var(--greyscaletext-80-primary, #262626);
+  text-align: justify;
+  font-family: "SF Pro Display";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.vct_banner_a:nth-child(1) {
+  opacity: 0.5;
+  margin-right: 0.44rem;
+}
+.vct_content {
+  display: flex;
+  justify-content: space-between;
+}
+.vct_content_img {
+  transform: translateX(-2.5rem);
+  width: 43.625rem;
+  height: 39.9375rem;
+  flex-shrink: 0;
+}
+.vct_content_text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.vct_text_logo {
+  width: 18.0625rem;
+  height: 7.5rem;
+  flex-shrink: 0;
+  margin-bottom: 1.94rem;
+}
+.vct_text_h1 {
+  width: 39.5625rem;
+  color: var(--greyscaletext-80-primary, #262626);
+  font-family: "SF Pro Display";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%;
+}
+.vct_text_btn {
+  display: flex;
+  margin-top: 2.31rem;
+  width: 11.9375rem;
+  height: 3rem;
+  padding: 0.75rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  background: var(--foundation-green-dark-hover, #0b4523);
+  box-shadow: 0px 0px 20px 0px rgba(198, 255, 189, 0.25);
+
+  color: var(--greyscaletext-0, #fff);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+/*  <!-- Tầm Nhìn - Sứ Mệnh --> */
+
+.vct_vision {
+  background: #f4f4f4;
+  position: relative;
+  padding: 5rem 7.5rem 0;
+}
+.vct_vision_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 26.5625rem;
+  flex-shrink: 0;
+  background: linear-gradient(
+      0deg,
+      rgba(17, 27, 34, 0.8) 0%,
+      rgba(17, 27, 34, 0.8) 100%
+    ),
+    url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.vct_vision_title {
+  display: flex;
+  width: 57.6875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-Spacing---4, 1rem);
+}
+.vct_title_h2 {
+  z-index: 10;
+  color: var(--greyscaletext-0, #fff);
+  font-family: "SF Pro Display";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+.vct_vision_title span {
+  margin-bottom: 5rem;
+  opacity: 0.9;
+  color: var(--greyscaletext-0, #fff);
+  font-family: "SF Pro Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.vct_vision_svg {
+  position: absolute;
+  width: 92.492rem;
+  height: 23.75rem;
+  flex-shrink: 0;
+  fill: #fff;
+}
+.vct_vision_descript {
+  position: relative;
+  height: 23.75rem;
+  width: 92.492rem;
+  transform: translateX(-7.5rem);
+}
+.vct_conteint_descript {
+  padding-left: 7.5rem;
+  transform: translateY(1rem);
+  z-index: 10;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vct_conteint_descript_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 49.4375rem;
+  height: 18.81244rem;
+  flex-shrink: 0;
+}
+.vct_vision_descript_h4 {
+  color: var(--greyscaletext-90, #1d1d1d);
+  font-family: "SF Pro Display";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 1rem;
+}
+.vct_vision_descript_content {
+  display: flex;
+}
+.vct_vision_box {
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+}
+.vct_box_span:nth-child(1) {
+  color: var(--Foundation-Green-Normal, var(--Library-Title, #015121));
+  font-family: "SF Pro Display";
+  font-size: 4.61606rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%;
+}
+.vct_box_span:nth-child(2) {
+  color: var(--greyscaletext-60-secondary, #3f3f3f);
+  font-family: "SF Pro Display";
+  font-size: 1.45156rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.vct_content_descript {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+}
+.vct_box_line {
+  width: 0.05863rem;
+  height: 9.79163rem;
+  background: #ebebeb;
+  margin: 0 3.81rem;
+}
+.vct_vision_label_h2 {
+  margin-top: 6.25rem;
+  margin-bottom: 3.5rem;
+  width: 50.875rem;
+  color: var(--greyscaletext-80-primary, #262626);
+  font-family: "SF Pro Display";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+.vct_vision_label_box {
+  height: 11.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(189, 189, 189, 0.5);
+}
+.vct_vision_box_text {
+  display: flex;
+  flex-direction: column;
+}
+.vct_vision_box_text span:nth-child(1) {
+  color: var(--greyscaletext-60-secondary, #3f3f3f);
+  font-family: "SF Pro Display";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 0.69rem;
+}
+.vct_vision_box_text span:nth-child(2) {
+  width: 32.875rem;
+  color: var(--Foundation-Grey-grey-500, #484f57);
+  font-family: "SF Pro Display";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.vct_vision_label_box_btn {
+  width: 2.50006rem;
+  height: 2.49975rem;
+  flex-shrink: 0;
+  border: none;
+}
+
+/* phân Loại user */
+.vct_classification {
+  width: 88.125rem;
+  height: 34.75rem;
+  flex-shrink: 0;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 7rem;
+  margin-bottom: 5rem;
+}
+.vct_classification_box {
+  width: 85rem;
+  height: 27.8125rem;
+  flex-shrink: 0;
+  border-radius: 0.6875rem;
+  background: #e7efea;
+  padding-left: 4.69rem;
+  padding-top: 5rem;
+}
+.vct_classification_title {
+  color: var(--greyscaletext-80-primary, #262626);
+  font-family: "SF Pro Display";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  width: 35.0625rem;
+}
+.vct_classification_content {
+  margin-top: 3.75rem;
+  display: flex;
+  gap: 2.75rem;
+}
+.vct_classification_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6875rem;
+}
+.vct_classification_item svg {
+  width: 4.25rem;
+  height: 4.25rem;
+}
+.vct_classification_item_label {
+  color: var(--Foundation-Green-Normal, var(--Library-Title, #015121));
+  font-family: "SF Pro Display";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.vct_classification_item_text {
+  color: var(--Foundation-Grey-grey-500, #484f57);
+  font-family: "SF Pro Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 14rem;
+}
+.vct_classification_box_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.vct_classification_box_div {
+  position: absolute;
+  bottom: 0;
+  right: 4.5rem;
+  width: 23.25rem;
+  height: 29rem;
+  flex-shrink: 0;
+  border-radius: 10.9375rem 10.9375rem 0rem 0rem;
+  background: var(--Library-Title, #015121);
+}

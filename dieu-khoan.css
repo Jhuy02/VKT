@@ -1,0 +1,261 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+html {
+  font-size: 1vw;
+}
+
+html body[data-scroll-locked] {
+  overflow: auto !important;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 4.26666vw;
+  }
+}
+
+body {
+  background: white;
+  color: black;
+  scroll-behavior: smooth;
+}
+/* rules điều khoản */
+
+.rules {
+  padding: 0 7.5rem;
+  padding-top: 1.5rem;
+}
+.rules_link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.63rem;
+}
+.rules_a {
+  text-decoration: none;
+  color: var(--greyscaletext-80-primary, #262626);
+  text-align: justify;
+  font-family: "SF Pro Display";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.rules_a:nth-child(1) {
+  opacity: 0.5;
+  margin-right: 0.44rem;
+}
+.rules_header {
+  display: flex;
+  align-items: flex-start;
+}
+.rules_aside {
+  position: sticky;
+  top: 8rem;
+  width: 15.4375rem;
+  display: flex;
+  padding: var(--Spacing-Spacing---4, 1rem);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-Spacing---5, 1.25rem);
+  border-radius: var(--Radius-Radius---SM, 0.5rem);
+  background: #f4f4f4;
+  margin-right: 2.56rem;
+}
+.rules_aside_title {
+  color: var(--greyscaletext-90, #1d1d1d);
+  text-align: right;
+  font-family: "SF Pro Display";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.rules_aside_label {
+  display: flex;
+  width: 10.625rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--greyscaletext-90, #1d1d1d);
+  font-family: "SF Pro Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  white-space: nowrap;
+}
+.rules_aside_active {
+  color: var(--Foundation-Green-Normal, var(--Library-Title, #015121));
+  font-family: "SF Pro Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+
+  position: relative;
+}
+.rules_aside_active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 0.125rem;
+  height: 1.25rem;
+  background: var(--Library-Title, #015121);
+}
+.rules_content {
+  flex: 1 0 0;
+}
+.rules_content_title {
+  display: flex;
+  width: 44.42013rem;
+  height: 3.625rem;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--greyscaletext-90, #1d1d1d);
+  font-family: "SF Pro Display";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 0.5rem;
+}
+.rules_content_descript {
+  display: flex;
+  width: 14.22744rem;
+  height: 1.375rem;
+  flex-direction: column;
+  justify-content: center;
+  color: #b3b3b3;
+  font-family: "SF Pro Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.rules_content_label {
+  color: var(--greyscaletext-90, #1d1d1d);
+  font-family: "SF Pro Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 49.4375rem;
+}
+.rules_content_warpper {
+  margin-top: 1.31rem;
+  display: flex;
+  flex-direction: column;
+}
+.rules_content_item {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.rules_content_item_title {
+  display: flex;
+  width: 34.34106rem;
+  height: 2.25rem;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--greyscaletext-90, #1d1d1d);
+  font-family: "SF Pro Display";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+.rules_content_item_value {
+  display: flex;
+  width: 49.4375rem;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--greyscaletext-60-secondary, #3f3f3f);
+  font-family: "SF Pro Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.rules_content_item_title_h5 {
+  display: flex;
+  width: 10.20481rem;
+  height: 3.5rem;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--greyscaletext-90, #1d1d1d);
+  font-family: "SF Pro Display";
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .rules {
+    padding: 0 0.75rem;
+  }
+  .rules_aside {
+    width: 100%;
+    margin: 0;
+  }
+  .rules_aside_label {
+    width: 100%;
+  }
+  .rules_header .rules_aside ul {
+    height: 0;
+    overflow: hidden;
+  }
+  .rules_header .rules_aside:hover ul {
+    height: 12rem;
+  }
+  .rules_header {
+    flex-direction: column;
+  }
+  .rules_content_title {
+    width: 100%;
+    height: auto;
+  }
+  .rules_content_label {
+    width: 100%;
+  }
+  .rules_content_item_title {
+    width: 100%;
+  }
+  .rules_content_item_value {
+    width: 100%;
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./authen.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav style="height: 6.875rem"></nav>
+    <section class="login">
+      <div class="login_header">
+        <div class="login_content">
+          <form class="login_form" onsubmit="return validateForm()">
+            <h1 class="login_box_title">Đăng nhập</h1>
+            <span class="login_box_label"
+              >Bạn có thể đăng nhập bằng tài khoản của Hội Kiến trúc sư Việt
+              Nam<a class="login_box_label_link" href="/singin"
+                >Tại đây
+              </a></span
+            >
+            <label class="login_label">Email:</label>
+            <input
+              id="email"
+              name="email"
+              class="login_input_email"
+              type="email"
+              placeholder="phamthanh1004@gmail.com"
+            />
+            <span id="emailError" class="error"></span>
+            <label class="login_label">Mật khẩu:</label>
+            <div class="login_form_password">
+              <input
+                id="password"
+                name="password"
+                class="login_input_password"
+                type="password"
+                placeholder="*******"
+              />
+              <div
+                onclick="togglePasswordVisibility()"
+                class="login_input_password_icon"
+              ></div>
+              <span id="passwordError" class="error"></span>
+            </div>
+            <div class="login_form_or">
+              <div class="login_line"></div>
+              <span>hoặc Đăng nhập bằng</span>
+              <div class="login_line"></div>
+            </div>
+            <button class="login_gg_btn">
+              <img src="./images/authen/logogg.png" alt="" />
+              <span>Đăng nhập bằng Google</span>
+            </button>
+            <button type="submit" class="login_submit_btn">Đăng nhập</button>
+          </form>
+          <span class="login_text_singin"
+            >Bạn chưa có tài khoản?<a
+              class="login_text_singin_link"
+              href="/singin"
+              >Đăng ký
+            </a></span
+          >
+        </div>
+        <img
+          class="login_banner"
+          src="./images/authen/banner.jpg"
+          alt="VKT login"
+        />
+      </div>
+      <div class="authen_fooder">
+        <div class="authen_fooder_line"></div>
+        <a class="authen_fooder_link" href=""
+          >VKT © 2034. Thiết kế bởi OkHub Việt Nam
+        </a>
+        <div class="authen_fooder_menu">
+          <a href="">Sản phẩm</a>
+          <a href="">Tài liệu</a>
+          <a href="">Nhãn hàng</a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./validate.js"></script>
+</html>
