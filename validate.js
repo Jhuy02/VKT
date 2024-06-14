@@ -54,8 +54,16 @@ function validateForm() {
     document.getElementById("emailError").style.display = "block";
     isValid = false;
   }
-
-  return isValid;
+  if (isValid) {
+    document.getElementById("box_authen_step2").style.opacity = "1";
+    document.getElementById("box_authen_step2").style.display = "block";
+    document.getElementById("box_authen").style.transform =
+      "translate3d(-100%,0,0)";
+    document.getElementById("box_authen_step2").style.transform =
+      "translate3d(-100%,0,0)";
+  }
+  // return isValid;
+  return false;
 }
 
 function togglePasswordVisibility() {

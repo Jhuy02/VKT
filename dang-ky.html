@@ -11,75 +11,190 @@
     <nav style="height: 6.875rem"></nav>
     <section class="login">
       <div class="login_header">
-        <div class="login_content">
-          <form class="login_form" onsubmit="return validateForm()">
+        <div id="login_content" class="login_content">
+          <div id="box_authen">
             <h1 class="singin_box_title">Đăng ký</h1>
-            <label class="login_label">Họ và tên:</label>
-            <input
-              id="name"
-              name="name"
-              class="singin_input_name"
-              type="text"
-              placeholder="Phạm Tiến Thành"
-            />
-            <span id="nameError" class="error"></span>
-            <label class="login_label">Email:</label>
-            <input
-              id="email"
-              name="email"
-              class="login_input_email"
-              type="email"
-              placeholder="phamthanh1004@gmail.com"
-            />
-            <span id="emailError" class="error"></span>
-            <label class="login_label">Mật khẩu:</label>
-            <div class="login_form_password">
+            <form class="login_form" onsubmit="return validateForm()">
+              <label class="login_label">Họ và tên:</label>
               <input
-                id="password"
-                name="password"
-                class="login_input_password"
-                type="password"
-                placeholder="*******"
+                id="name"
+                name="name"
+                class="singin_input_name"
+                type="text"
+                placeholder="Phạm Tiến Thành"
               />
-              <div
-                onclick="togglePasswordVisibility()"
-                class="login_input_password_icon"
-              ></div>
-              <span id="passwordError" class="error"></span>
-            </div>
-            <label class="login_label">Nhập lại mật khẩu:</label>
-            <div class="login_form_password">
+              <span id="nameError" class="error"></span>
+              <label class="login_label">Email:</label>
               <input
-                id="retypepassword"
-                name="retypepassword"
-                class="login_input_password"
-                type="password"
-                placeholder="*******"
+                id="email"
+                name="email"
+                class="login_input_email"
+                type="email"
+                placeholder="phamthanh1004@gmail.com"
               />
-              <div
-                onclick="toggleRetypePasswordVisibility()"
-                class="login_input_password_icon"
-              ></div>
-              <span id="retypepasswordError" class="error"></span>
+              <span id="emailError" class="error"></span>
+              <label class="login_label">Mật khẩu:</label>
+              <div class="login_form_password">
+                <input
+                  id="password"
+                  name="password"
+                  class="login_input_password"
+                  type="password"
+                  placeholder="*******"
+                />
+                <div
+                  onclick="togglePasswordVisibility()"
+                  class="login_input_password_icon"
+                ></div>
+                <span id="passwordError" class="error"></span>
+              </div>
+              <label class="login_label">Nhập lại mật khẩu:</label>
+              <div class="login_form_password">
+                <input
+                  id="retypepassword"
+                  name="retypepassword"
+                  class="login_input_password"
+                  type="password"
+                  placeholder="*******"
+                />
+                <div
+                  onclick="toggleRetypePasswordVisibility()"
+                  class="login_input_password_icon"
+                ></div>
+                <span id="retypepasswordError" class="error"></span>
+              </div>
+              <button type="submit" class="login_submit_btn">Đăng ký</button>
+            </form>
+            <div class="login_text_singin_note">
+              <span class="login_text_singin"
+                >Bạn đã có tài khoản?<a
+                  class="login_text_singin_link"
+                  href="/login"
+                >
+                  Đăng nhập
+                </a></span
+              >
             </div>
-            <div class="login_form_or">
-              <div class="login_line"></div>
-              <span>hoặc Đăng nhập bằng</span>
-              <div class="login_line"></div>
+          </div>
+          <div id="box_authen_step2" class="singinstep_warper">
+            <h1 class="singinstep_box_title">Đăng ký</h1>
+            <span class="singinstep_box_descript"
+              >Bạn làm việc trong lĩnh vực nào ?</span
+            >
+            <div class="singinstep_warper_check">
+              <input type="checkbox" hidden="hidden" id="username" />
+              <label class="switch" for="username"></label>
+              <span class="">Tôi là một sinh viên </span>
             </div>
-            <button class="login_gg_btn">
-              <img src="./images/authen/logogg.png" alt="" />
-              <span>Đăng nhập bằng Google</span>
-            </button>
-            <button type="submit" class="login_submit_btn">Đăng nhập</button>
-          </form>
-          <span class="login_text_singin"
-            >Bạn chưa có tài khoản?<a
-              class="login_text_singin_link"
-              href="/singin"
-              >Đăng ký
-            </a></span
-          >
+            <div class="singinstep_warper_grid">
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+              <div class="singinstep_item">
+                <img
+                  class="singinstep_item_img"
+                  src="./images/authen/Group.png"
+                  alt=""
+                />
+                <span class="singinstep_item_text">Kiến trúc sư</span>
+              </div>
+            </div>
+            <div class="singinstep_next">
+              <div class="singinstep_check_rules">
+                <input class="singinstep_check_input" type="checkbox" />
+                <span class="singinstep_check_text"
+                  >Tôi đồng ý nhận thông tin tiếp thị có mục tiêu theo điều
+                  khoản và điều kiện của người dùng VKT</span
+                >
+              </div>
+              <button class="singinstep_btn">Kế tiếp</button>
+            </div>
+          </div>
         </div>
         <img
           class="login_banner_singin"
@@ -101,4 +216,17 @@
     </section>
   </body>
   <script src="./validate.js"></script>
+  <script>
+    const items = document.querySelectorAll(".singinstep_item");
+
+    items.forEach((item) => {
+      item.addEventListener("click", () => {
+        if (item.classList.contains("active_singinstep_item")) {
+          item.classList.remove("active_singinstep_item");
+        } else {
+          item.classList.add("active_singinstep_item");
+        }
+      });
+    });
+  </script>
 </html>

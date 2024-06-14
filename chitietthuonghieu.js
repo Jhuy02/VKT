@@ -3,7 +3,7 @@ const detail_shadow_id = document.getElementById("detail_shadow_id");
 const detail_seemore_btn_id = document.getElementById("detail_seemore_btn_id");
 const detailSpan = document.querySelectorAll("#detail_value_span");
 let active = true;
-function SeeMore() {
+detail_seemore_btn_id.addEventListener("click", function () {
   if (active) {
     detailvalue.style.height = `${detailSpan[0].offsetHeight}px`;
     detailvalue.style.margin = `0 0 2rem 0`;
@@ -19,4 +19,4 @@ function SeeMore() {
     detail_seemore_btn_id.style.bottom = `0`;
     active = true;
   }
-}
+});
