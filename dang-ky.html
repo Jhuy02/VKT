@@ -192,7 +192,7 @@
                   khoản và điều kiện của người dùng VKT</span
                 >
               </div>
-              <button class="singinstep_btn">Kế tiếp</button>
+              <div class="singinstep_btn">Kế tiếp</div>
             </div>
           </div>
         </div>
@@ -214,10 +214,46 @@
         </div>
       </div>
     </section>
+    <!-- modal thành công -->
+    <div class="modal_success_authen">
+      <div class="modal_box">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="59"
+          height="59"
+          viewBox="0 0 59 59"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_5387_116613)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M29.5 0C13.2289 0 0 13.2289 0 29.5C0 45.7711 13.2289 59 29.5 59C45.7711 59 59 45.7711 59 29.5C59 13.2289 45.7711 0 29.5 0Z"
+              fill="#015121"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M43.7661 19.5562C44.4806 20.2707 44.4806 21.446 43.7661 22.1605L26.481 39.4457C26.1237 39.8029 25.6513 39.9873 25.1788 39.9873C24.7063 39.9873 24.2339 39.8029 23.8767 39.4457L15.2341 30.8031C14.5196 30.0886 14.5196 28.9132 15.2341 28.1988C15.9485 27.4843 17.1239 27.4843 17.8384 28.1988L25.1788 35.5392L41.1618 19.5562C41.8763 18.8302 43.0517 18.8302 43.7661 19.5562Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_5387_116613">
+              <rect width="59" height="59" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <span>Đăng ký thành công</span>
+        <button class="">Bắt đầu khám phá</button>
+      </div>
+    </div>
   </body>
   <script src="./validate.js"></script>
   <script>
     const items = document.querySelectorAll(".singinstep_item");
+    const itemsuccess = document.querySelector(".modal_success_authen");
+    const itemnext = document.querySelector(".singinstep_btn");
 
     items.forEach((item) => {
       item.addEventListener("click", () => {
@@ -227,6 +263,25 @@
           item.classList.add("active_singinstep_item");
         }
       });
+    });
+    const iteminput = document.querySelector(".singinstep_check_input");
+    iteminput.addEventListener("click", () => {
+      Checkbox();
+    });
+    function Checkbox() {
+      if (iteminput.checked) {
+        itemnext.classList.remove("disabled_btnNext");
+        itemnext.classList.add("active_btnNext");
+      } else {
+        itemnext.classList.remove("active_btnNext");
+        itemnext.classList.add("disabled_btnNext");
+      }
+    }
+    Checkbox();
+    itemnext.addEventListener("click", () => {
+      if (iteminput.checked) {
+        itemsuccess.classList.add("active_modal_success");
+      }
     });
   </script>
 </html>

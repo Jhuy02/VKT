@@ -60,7 +60,7 @@ body {
 /* LOGIN */
 .login {
   width: 100%;
-  /* height: 100vh; */
+  /* height: calc(100vh - 6.875rem); */
   padding-left: 7.5rem;
 }
 #box_authen {
@@ -494,6 +494,12 @@ body {
   height: 1rem;
   accent-color: #015121;
 }
+.disabled_btnNext {
+  opacity: 0.5;
+}
+.active_btnNext {
+  opacity: 1;
+}
 .singinstep_check_text {
   color: #8d8d8d;
   font-family: "SF Pro Display";
@@ -545,7 +551,7 @@ body {
 /* MODAL modal_success */
 .modal_success_authen {
   position: fixed;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   top: 0;
@@ -554,6 +560,9 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5.400000095367432px);
+}
+.active_modal_success {
+  display: flex;
 }
 .modal_success_authen .modal_box {
   width: 21.9375rem;

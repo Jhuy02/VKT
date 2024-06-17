@@ -234,7 +234,7 @@ body {
 .vct_vision_box {
   display: flex;
   flex-direction: column;
-  min-width: 10rem;
+  min-width: 5rem;
 }
 .vct_box_span:nth-child(1) {
   color: var(--Foundation-Green-Normal, var(--Library-Title, #015121));
